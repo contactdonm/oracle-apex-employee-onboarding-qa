@@ -8,7 +8,7 @@ test('@regression BUG-001 IT action opens without ERR-1002', async ({ page }) =>
   );
 
   await login(page, 'AMY');
-  await page.getByText('My Tasks', { exact: true }).first().click();
+  await page.getByRole('link', { name: 'Task Pages' }).click();
 
   const itTask = page.getByText(/IT Setup Tasks for/i).first();
   test.skip(!(await itTask.isVisible().catch(() => false)), 'No open IT Setup task is available');

@@ -10,7 +10,7 @@ export async function login(page: Page, role: TestRole): Promise<void> {
     throw new Error(`Missing APEX_${role}_USER or APEX_${role}_PASSWORD`);
   }
 
-  await page.goto('/home');
+  await page.goto('home');
 
   const userInput = page.locator(
     'input[name$="USERNAME"], input[id$="USERNAME"], input[autocomplete="username"]'

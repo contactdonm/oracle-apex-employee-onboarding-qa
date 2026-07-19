@@ -1,7 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const baseURL = process.env.APEX_BASE_URL ??
+const rawBaseURL = process.env.APEX_BASE_URL ??
   'https://oracleapex.com/ords/r/quadfour/employee-onboarding-application';
+const baseURL = rawBaseURL.endsWith('/') ? rawBaseURL : `${rawBaseURL}/`;
 
 export default defineConfig({
   testDir: './tests',

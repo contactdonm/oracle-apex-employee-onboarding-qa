@@ -1,0 +1,18 @@
+{
+  "name": "oracle-apex-employee-onboarding-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright quality gate for the Oracle APEX Employee Onboarding QA portfolio",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}

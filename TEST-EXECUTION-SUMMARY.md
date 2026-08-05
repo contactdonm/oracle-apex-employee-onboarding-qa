@@ -45,6 +45,3 @@
 - Run WCAG-oriented keyboard, label, focus, contrast, and error-announcement checks.
 - Automate the critical smoke and happy-path scenarios in Playwright and execute them in GitHub Actions.
 
-## Interview-ready summary
-
-> I built and tested an Oracle APEX employee-onboarding workflow across three user roles. I designed a risk-based test set, validated UI behavior against database and workflow state, verified outbound email, and found four defects. Two high-severity issues blocked task progression: an invalid APEX item target and inconsistent employee-type reference data. I isolated both root causes, verified the fixes, retried the faulted workflows, and completed a full end-to-end regression through the final onboarding email and completed workflow state.
